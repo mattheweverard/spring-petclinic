@@ -42,12 +42,26 @@ pipeline {
         sh 'sleep 4'
       }
     }
-    stage('A MateoEverard stage') {
-      agent any
-      steps {
-        //sample dummy step
-        sh 'sleep 4'
+      stage('Deploy to DIT') {
+          agent any
+          steps {
+              //sample dummy step
+              sh 'sleep 4'
+          }
       }
-    }
+      stage('Deploy to SIT') {
+          agent any
+          steps {
+              //sample dummy step
+              sh 'sleep 4'
+          }
+      }
+      stage('Deploy to Pre-Prod') {
+          agent any
+          steps {
+              //sample dummy step
+              sh 'sleep 4'
+          }
+      }
   }
 }

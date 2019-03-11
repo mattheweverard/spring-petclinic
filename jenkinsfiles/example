@@ -42,7 +42,7 @@ pipeline {
         sh 'sleep 4'
       }
     }
-    stage('A Matt stage') {
+    stage('A MattE stage') {
       agent any
       steps {
         //sample dummy step

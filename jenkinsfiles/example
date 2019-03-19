@@ -42,7 +42,7 @@ pipeline {
         sh 'sleep 4'
       }
     }
-      stage('Deploy to DIntegratedT') {
+      stage('Deploy to DIntT') {
           agent any
           steps {
               //sample dummy step

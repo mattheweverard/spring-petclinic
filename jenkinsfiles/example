@@ -42,7 +42,7 @@ pipeline {
         sh 'sleep 4'
       }
     }
-      stage('Deploy to DITT') {
+      stage('Deploy to DIT') {
           agent any
           steps {
               //sample dummy step
